@@ -1,0 +1,25 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "portfolio",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "Randy Prempeh",
+  "license": "MIT",
+  "homepage": "https://randyprempeh.github.io/mynewportfolio",
+  "dependencies": {
+    "gh-pages": "^3.2.3",
+    "node-sass": "^7.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/randyprempeh/website.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/randyprempeh/website/issues"
+  }
+}

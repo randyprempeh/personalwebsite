@@ -1,0 +1,1198 @@
+// WIdescreens
+@include mediaXl {
+  /* abouut */
+  .bio #about-txt {
+    font-size: 6rem;
+  }
+
+  /* #my-background {
+    font-size: 15px;
+  } */
+
+  .about-info .job ul {
+    font-size: 0.8rem;
+  }
+
+  .about-info .job .dev-sub {
+    font-size: 0.9rem;
+  }
+
+  /*  .about-info .job .overlay .library img {
+    width: 10%;
+    margin: 2px;
+    left: 10rem;
+  } */
+
+  /*   .about-info .job .backend img {
+    width: 7vw;
+    display: block;
+    position: relative;
+    left: 7rem;
+  } */
+
+  /* .about-info .job .tools img {
+    display: inline-block;
+    width: 4vw;
+    margin: 10px;
+  } */
+
+  .career_section .timeline_act {
+    height: 280px;
+  }
+
+  /*  .career_section .timeline_act h3 {
+    font-size: 18px;
+  } */
+
+  .career_section .timeline_act .date {
+    font-size: 28px;
+  }
+
+  .career_section .timeline_act h4 {
+    font-size: 16px;
+  }
+
+  /* works */
+  #work-text {
+    font-size: 5rem;
+  }
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+
+    & .project-details p:hover {
+      padding: 3rem;
+      font-size: 1.3rem;
+      font-family: "Gochi Hand", cursive;
+    }
+  }
+
+  /* contact */
+  #contact-intro .lg-heading #contact-text {
+    font-size: 7rem;
+  }
+}
+
+//DEsktops/laps
+@include mediaLg {
+  /* home */
+  .social-media .icons {
+    margin-top: 1.6rem;
+  }
+
+  /* about */
+  .about-info {
+    grid-gap: 1.4rem;
+    padding: 1rem;
+  }
+
+  .bio-image {
+    width: 100%;
+    height: auto;
+  }
+  .job ul li {
+    font-size: 1.3rem;
+  }
+  .parallax {
+    background-position: 50% 50%;
+    background-size: contain;
+  }
+  #my-background {
+    font-size: 11px;
+    letter-spacing: 4px;
+  }
+
+  /* works */
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .asp .req .req-header {
+    font-size: 1.4rem;
+  }
+
+  /* contact  */
+  #contact-intro {
+    left: 25%;
+  }
+
+  #contact .boxes {
+    width: 50vw;
+    margin: 2rem auto;
+  }
+}
+
+//Tablets
+@include mediaMd {
+  /* homepage */
+  #home {
+    height: 100%;
+  }
+
+  main {
+    align-items: center;
+    text-align: center;
+
+    .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem;
+      font-size: 9vw;
+    }
+
+    .home-wrap {
+      width: 100%;
+      margin-top: 2rem;
+      font-size: 2vw;
+    }
+    .icons .icon {
+      margin-right: 15px;
+    }
+
+    .introduction .introduction-inner .content {
+      .content-inner {
+        width: 100%;
+        text-align: left;
+        margin: 10px 25px;
+
+        h1 {
+          font-size: 3.2rem;
+          line-height: 1.2;
+          width: 300px;
+          margin-bottom: 30px;
+
+          .line {
+            height: 120px;
+          }
+        }
+
+        p {
+          font-size: 1rem;
+          width: 300px;
+          margin: 10px 0 28px;
+        }
+      }
+    }
+    .introduction .introduction-inner .image {
+      width: 100%;
+      .image-inner {
+        img {
+          bottom: 30%;
+        }
+      }
+    }
+
+    .social-media {
+      top: 76%;
+    }
+  }
+
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0;
+    font-size: 1rem;
+
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .menu-nav {
+    height: 70vh;
+    transform: translate3d(-100%, 0, 0);
+
+    .nav-link {
+      font-size: 2.9rem;
+    }
+  }
+
+  .menu-branding {
+    height: 30vh;
+    transform: translate3d(100%, 0, 0);
+
+    .portrait {
+      width: 15rem;
+      height: 15rem;
+    }
+  }
+
+  /*about */
+
+  .about-info {
+    grid-template-areas:
+      "bio-image"
+      "bio"
+      "job1"
+      "job2"
+      "job3";
+    grid-template-columns: 1fr;
+  }
+
+  #genesis {
+    margin-top: 80px;
+  }
+
+  .about-info .job .overlay .library img {
+    width: 13%;
+    margin: 2px;
+    left: 16rem;
+  }
+
+  .about-info .job .tools img {
+    width: 11vw;
+  }
+
+  .parallax {
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+
+  .career_section blockquote {
+    font-size: 2.3em;
+    width: 75%;
+  }
+
+  .career_section .timeline_act h3 {
+    font-size: 19px;
+  }
+
+  .career_section .timeline_act .date {
+    font-size: 17px;
+  }
+
+  .career_section .timeline_act h4 {
+    font-size: 13px;
+  }
+
+  .career_section .timeline_act {
+    height: 290px;
+  }
+  .career_section .timeline_act:nth-of-type(1) {
+    width: 35%;
+    top: 55%;
+    left: 72%;
+    margin-top: unset;
+  }
+
+  .career_section .timeline_act:nth-of-type(2) {
+    width: 35%;
+    right: 33%;
+    top: 50%;
+    margin-top: 25%;
+  }
+
+  .career_section .timeline_act:nth-of-type(3) {
+    width: 35%;
+    right: 33%;
+    top: 15%;
+    margin-top: 15%;
+  }
+
+  .career_section .timeline_act:nth-of-type(4) {
+    width: 35%;
+    right: 72%;
+    top: 54%;
+    margin-top: unset;
+  }
+
+  #animate_hub {
+    width: 40%;
+    right: -9%;
+  }
+
+  /* works */
+  .wrap-intro #work-text {
+    font-size: 4rem;
+    margin-left: -13px;
+  }
+
+  #work .sm-heading {
+    font-size: 12px;
+    letter-spacing: 10px;
+  }
+
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #work .asp {
+    display: block;
+    padding: 3rem;
+  }
+
+  #work .asp .req {
+    width: 80%;
+    margin: 10px auto;
+    padding: 1.2rem;
+  }
+
+  #work .asp .req .req-motive {
+    font-size: 17px;
+    text-align: left;
+  }
+
+  /* contact */
+  #contact-intro {
+    left: 20%;
+    top: 25%;
+
+    .lg-heading {
+      font-size: 9vw;
+
+      #contact-text {
+        font-size: 4rem;
+      }
+    }
+
+    & .sm-heading {
+      font-size: 10px;
+      letter-spacing: 10px;
+    }
+  }
+
+  #contact {
+    grid-template-columns: 1fr;
+  }
+
+  .boxes {
+    margin: 2rem auto;
+  }
+
+  .boxes li {
+    font-size: 1rem;
+  }
+
+  .contact-title h2 {
+    font-size: 16px;
+  }
+  #contact .contact-form {
+    width: 600px;
+  }
+}
+
+// Smartphones and small devices
+@include mediaSm {
+  header {
+    position: absolute;
+  }
+  /* homepage */
+  .navbar-wrapper .mysign {
+    margin: 10px 0 0 20px;
+  }
+
+  .navbar-wrapper img {
+    width: 40px;
+    height: 50px;
+  }
+
+  .nav-item .nav-link {
+    font-size: 2rem;
+  }
+
+  #home {
+    height: 100%;
+  }
+
+  main .icons .icon {
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 15px;
+  }
+
+  main .introduction .introduction-inner {
+    grid-template-columns: 50% 50%;
+    height: 100vh;
+  }
+
+  main .introduction .introduction-inner .content {
+    width: 100%;
+    text-align: left;
+    margin-top: 100px;
+  }
+
+  main .introduction .introduction-inner .content .content-inner {
+    width: 100%;
+    height: 95%;
+    margin: 5px 10px;
+  }
+
+  main .introduction .introduction-inner .content .content-inner h1 {
+    margin: 100px 0 0 0;
+    width: 100%;
+    font-size: 100px;
+
+    .line {
+      height: 140px;
+      #p-name {
+        font-size: 35px;
+        font-weight: 200;
+        line-height: 1.2;
+      }
+    }
+  }
+
+  main .introduction .introduction-inner .content .content-inner h1 .line-2 {
+    letter-spacing: 1px;
+    height: 190px;
+  }
+
+  main .introduction .introduction-inner .content .content-inner p {
+    display: none;
+  }
+
+  main
+    .introduction
+    .introduction-inner
+    .content
+    .content-inner
+    .home_button
+    #redirect {
+    font-size: 1rem;
+    padding: 15px 30px;
+  }
+
+  main .introduction .introduction-inner .image {
+    width: 100%;
+  }
+
+  main .introduction .introduction-inner .image .image-inner img {
+    width: 100%;
+    bottom: 50%;
+  }
+
+  main .social-media {
+    width: 100%;
+    height: 80px;
+    top: 84%;
+    left: -40%;
+  }
+
+  main .icons .icon {
+    margin-right: 5px;
+    font-size: 40px;
+    line-height: 60px;
+    height: 60px;
+    width: 60px;
+  }
+
+  /* about page */
+  #about-body header {
+    position: absolute;
+  }
+  #about {
+    padding: 10px;
+  }
+  #about h1 {
+    font-size: 5rem;
+
+    & span {
+      font-size: 3rem;
+    }
+  }
+
+  .about-info {
+    padding: 1rem;
+    grid-gap: 1rem;
+  }
+
+  .about-info .bio-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .bio #my-background {
+    text-align: left;
+    font-size: 11px;
+    letter-spacing: 2px;
+
+    & .dev-lang {
+      font-size: 10px;
+    }
+  }
+  .about-info .job {
+    margin-bottom: 0.2rem;
+
+    & .dev-main {
+      font-size: 1.2rem;
+      padding-bottom: 0.4rem;
+    }
+    & ul {
+      font-size: 1rem;
+    }
+    & .dev-sub {
+      font-size: 0.7rem;
+      padding: 0.3rem;
+    }
+  }
+
+  .about-info .job .overlay .library img {
+    left: 10rem;
+  }
+
+  .about-info .job .overlay .backend img {
+    width: 17vw;
+    display: grid;
+  }
+
+  .parallax {
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+
+  & #about .journey {
+    margin-bottom: 2px;
+
+    & .timeline {
+      padding: 0.2rem;
+      font-size: 1rem;
+      width: 200px;
+
+      & p {
+        font-size: 9px;
+      }
+    }
+  }
+  .career_section {
+    padding: 5px 10px;
+  }
+  .career_section blockquote {
+    font-size: 1.2em;
+    width: 80%;
+  }
+
+  .career_section .timeline_act h3 {
+    font-size: 15px;
+  }
+
+  .career_section .timeline_act .date {
+    font-size: 12px;
+  }
+
+  .career_section .timeline_act h4 {
+    font-size: 10px;
+  }
+
+  .career_section .timeline_act {
+    height: 250px;
+  }
+  .career_section .timeline_act:nth-of-type(1) {
+    width: 48%;
+    top: 30%;
+    left: 0;
+  }
+
+  .career_section .timeline_act:nth-of-type(2) {
+    width: 48%;
+    top: 30%;
+    left: 53%;
+    margin-top: unset;
+  }
+
+  .career_section .timeline_act:nth-of-type(3) {
+    width: 48%;
+    top: 68%;
+    left: 0;
+    margin-top: unset;
+  }
+
+  .career_section .timeline_act:nth-of-type(4) {
+    width: 48%;
+    right: 0;
+    left: 53%;
+    top: 68%;
+    margin-top: unset;
+  }
+
+  #animate_hub {
+    width: 50%;
+    right: -50px;
+  }
+
+  /* Work page */
+  #work .lg-heading {
+    font-size: 5rem;
+
+    & span {
+      font-size: 3rem;
+    }
+  }
+  #work .sm-heading {
+    font-size: 10px;
+    letter-spacing: 8px;
+  }
+
+  #gh-hint {
+    font-size: 1.2rem;
+  }
+
+  .section-gh .github-account {
+    margin-top: 20px;
+  }
+
+  #work .asp {
+    display: block;
+    padding: 1.5rem;
+
+    & .req {
+      width: 80%;
+      margin: 0 auto;
+      padding: 0;
+
+      & .req-header {
+        font-size: 1.4rem;
+      }
+
+      & .req-motive {
+        font-size: 15px;
+        text-align: center;
+        padding: 15px 60px;
+      }
+    }
+  }
+  .projects {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .parallax2 {
+    background-position: 100% 80%;
+    height: 200px;
+  }
+
+  /* contact page */
+  #contact-intro {
+    left: 10%;
+    top: 40%;
+
+    & .lg-heading {
+      font-size: 4rem;
+      letter-spacing: 5px;
+
+      #contact-text {
+        font-size: 3rem;
+        margin-left: -26px;
+      }
+    }
+
+    & .sm-heading {
+      font-size: 15px;
+      letter-spacing: 5px;
+    }
+  }
+
+  #contact {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+  }
+  #contact .contact-form {
+    width: 100%;
+    padding: 0.8rem 0.6rem;
+
+    & .form-control {
+      height: 2.8rem;
+      font-size: 10px;
+    }
+  }
+
+  .boxes {
+    margin: 2rem auto;
+  }
+  .boxes ul li {
+    font-size: 0.6rem;
+    margin-bottom: 10px;
+    float: unset;
+  }
+  .contact-title h2 {
+    font-size: 10px;
+    font-weight: 100;
+    letter-spacing: 2px;
+  }
+
+  /* footer */
+  #main-footer .footer-profile ul li {
+    font-size: 8px;
+    font-weight: 200;
+  }
+}
+
+/* very small devices */
+@include xsm {
+  /* homepage */
+  .navbar-wrapper .mysign {
+    margin: 15px 0 0 25px;
+  }
+
+  .navbar-wrapper .menu-btn {
+    right: 1.6rem;
+    top: 2rem;
+  }
+
+  .navbar-wrapper img {
+    width: 30px;
+    height: 40px;
+  }
+
+  .nav-item .nav-link {
+    font-size: 1.9rem;
+  }
+
+  main .introduction .introduction-bg {
+    background-position: center;
+    background-size: cover;
+  }
+
+  main .introduction .introduction-inner {
+    grid-template-columns: 100%;
+    height: 100vh;
+  }
+
+  main .introduction .introduction-inner .content {
+    width: 100%;
+    text-align: left;
+    margin-top: 100px;
+  }
+
+  main .introduction .introduction-inner .content .content-inner {
+    width: 100%;
+    height: 100%;
+    margin: 4px 5px;
+  }
+
+  main .introduction .introduction-inner .content .content-inner h1 {
+    font-size: 10px;
+    padding: 10px 5px;
+    width: 100%;
+    margin: 80px 0 0 25px;
+  }
+
+  main .introduction .introduction-inner .content .content-inner p {
+    font-size: 0.8rem;
+    display: block;
+    margin: 10px 0 20px 25px;
+    padding: 10px 80px 0 10px;
+  }
+
+  main .introduction .introduction-inner .content .content-inner h1 .line {
+    height: 23px;
+    #p-name {
+      font-size: 23px;
+      font-weight: 300;
+      line-height: 1.4;
+    }
+  }
+
+  main .introduction .introduction-inner .content .content-inner h1 .line-2 {
+    letter-spacing: 1px;
+    height: 27px;
+  }
+
+  main .introduction .introduction-inner .content .content-inner .home_button {
+    margin: 5px 0 0 35px;
+  }
+
+  main
+    .introduction
+    .introduction-inner
+    .content
+    .content-inner
+    .home_button
+    #redirect {
+    font-size: 0.8rem;
+    padding: 10px 15px;
+  }
+  main .introduction .introduction-inner .image {
+    width: 100%;
+  }
+
+  main .introduction .introduction-inner .image .image-inner {
+    bottom: 39px;
+  }
+
+  main .introduction .introduction-inner .image .image-inner img {
+    width: 100%;
+    bottom: 50%;
+  }
+
+  main .social-media {
+    width: 100%;
+    height: 60px;
+    top: 78%;
+    left: -50%;
+  }
+
+  main .icons .icon {
+    margin-right: 5px;
+    font-size: 30px;
+    line-height: 50px;
+    height: 51px;
+    width: 50px;
+  }
+
+  main .home_button {
+    .redirect {
+      height: 35px;
+      font-size: 0.8rem;
+      letter-spacing: 1px;
+    }
+  }
+
+  /* Section II */
+
+  main .rgbKineticSlider {
+    height: 37%;
+  }
+
+  .open-projects .interest .plane {
+    font-size: 7.5vw;
+  }
+
+  main .drive-in {
+    padding: 0.3rem 0.9rem;
+    font-family: "Cosi", Azure;
+
+    .passion-text {
+      width: 100%;
+      font-size: 14px;
+      padding: 20px 5px 20px 5px;
+      line-height: 1.5;
+
+      .mini-pass {
+        font-size: 13px;
+      }
+    }
+  }
+
+  main .one {
+    height: 450px;
+    padding: 15px 10px;
+    //margin-bottom: 10px;
+
+    .open-edd {
+      top: 67%;
+      left: 0%;
+      height: 150px;
+      margin-bottom: 10px;
+    }
+
+    .edd-info {
+      font-size: 11px;
+    }
+  }
+
+  main .pro-slide {
+    margin-bottom: 0;
+    padding: 20px 0 20px 0;
+    height: 450px;
+  }
+
+  main .pro-slider {
+    margin-bottom: 0;
+  }
+
+  main .project-overview {
+    margin-top: 50px;
+    height: 60vh;
+  }
+
+  main .file-project {
+    width: 80%;
+    height: 400px;
+  }
+
+  main .file-project img {
+    height: 50%;
+  }
+
+  .slider-nav {
+    visibility: hidden;
+  }
+
+  #click_view {
+    left: 10%;
+  }
+
+  main .contact-wrapper {
+    padding: 5px 0 35px 0;
+  }
+
+  main .contact-wrapper .contact-blick {
+    & h3 {
+      font-size: 1.3rem;
+      padding: 15px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: 12px;
+      text-transform: capitalize;
+      font-weight: 200;
+      padding: 5px 20px;
+    }
+  }
+
+  /* work */ //Css alteration
+
+  #about-body header {
+    width: 100vw;
+    z-index: 99;
+  }
+  #about {
+    padding: 5px;
+    overflow: hidden;
+  }
+
+  #about h1 {
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    & span {
+      font-size: 1.8rem;
+      margin-left: -5px;
+    }
+  }
+
+  .about-info .bio-image {
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+  }
+
+  .about-info .bio {
+    padding: 10px 15px;
+  }
+
+  .about-info .bio p {
+    font-size: 17px;
+    line-height: 1.8;
+    letter-spacing: 0.4px;
+    text-align: left;
+  }
+
+  .about-info {
+    padding: 1rem 0.5rem;
+    grid-gap: 1rem;
+  }
+
+  .about-info .job {
+    width: 90%;
+    margin-bottom: 1rem;
+  }
+
+  .about-info .job ul {
+    font-size: 0.7rem;
+  }
+
+  .about-info .job .overlay .core-img img {
+    width: 100%;
+    display: block;
+  }
+
+  .about-info .job .overlay .library img {
+    width: 8%;
+    margin: 5px;
+    left: 9rem;
+  }
+
+  .about-info .job .backend img {
+    width: 15vw;
+    display: block;
+  }
+
+  .career_section {
+    padding: 5px 2px;
+    margin: 0;
+  }
+  .career_section blockquote {
+    //visibility: hidden;
+    font-size: 1.5em;
+  }
+
+  .career_section .timeline_act {
+    height: 250px;
+  }
+
+  .career_section .timeline_act h3 {
+    font-size: 13px;
+  }
+
+  .career_section .timeline_act:nth-of-type(1) {
+    width: 45%;
+    top: 22%;
+    left: 52%;
+    margin-top: unset;
+  }
+
+  .career_section .timeline_act:nth-of-type(2) {
+    width: 45%;
+    right: 52%;
+    top: 22%;
+    margin-top: unset;
+  }
+
+  .career_section .timeline_act:nth-of-type(3) {
+    width: 45%;
+    right: 10px;
+    top: 53%;
+  }
+
+  .career_section .timeline_act:nth-of-type(4) {
+    width: 45%;
+    top: 61%;
+    right: 52%;
+    margin-top: unset;
+  }
+
+  .career_section #animate_hub {
+    height: 30%;
+  }
+
+  .career_section .timeline_act h4 {
+    font-size: 8px;
+  }
+
+  /* work */
+  #wrapper-header:before {
+    background-position: center;
+  }
+
+  #work .lg-heading {
+    font-size: 2.2rem;
+
+    & span {
+      font-size: 1.8rem;
+      margin-left: -9px;
+    }
+  }
+
+  #work .sm-heading {
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+
+  .parallax2 {
+    background-position: 50% 50%;
+    height: 100vh;
+  }
+
+  .motivate .do-it {
+    padding: 50px 10px;
+  }
+
+  .motivate .do-it h1 {
+    font-size: 100px;
+  }
+
+  .motivate .hyper-up {
+    top: 35%;
+    left: 45%;
+  }
+
+  .motivate .hyper-up ul li {
+    font-size: 35px;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+    padding: 0.6rem;
+  }
+
+  .section-gh {
+    margin: 1rem auto;
+    padding: 1rem;
+    width: 85vw;
+    height: 35vh;
+  }
+
+  #gh-hint {
+    font-size: 0.9rem;
+  }
+
+  #work .asp {
+    padding: 1rem 0.2rem;
+  }
+
+  #work .asp .req {
+    width: 80%;
+  }
+
+  #work .asp .req .req-header {
+    font-size: 0.8rem;
+  }
+
+  #work .asp .req .req-motive {
+    font-size: 9px;
+    text-align: left;
+    padding: 5px 10px;
+  }
+
+  /* contact */
+  #contact-intro {
+    left: 50%;
+    top: 50%;
+    width: 300px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  #contact-intro .lg-heading {
+    font-size: 3rem;
+    letter-spacing: 5px;
+  }
+
+  #contact-intro .sm-heading {
+    font-size: 10px;
+    letter-spacing: 3px;
+  }
+
+  #contact-intro .lg-heading #contact-text {
+    font-size: 3rem;
+    margin-left: -12px;
+  }
+
+  #contact {
+    padding: 5px;
+  }
+
+  .boxes {
+    margin: 1rem auto;
+    width: 80vw;
+  }
+
+  .boxes li {
+    font-size: 0.9rem;
+  }
+
+  #resume {
+    padding: 2rem 1rem;
+  }
+
+  .work-with-me {
+    display: flex;
+    flex-flow: wrap;
+    padding: 2rem 0.6rem;
+  }
+
+  .contact-title {
+    margin: 50px 10px;
+  }
+
+  .contact-title h2 {
+    margin-top: 1rem;
+  }
+
+  /*   #contact .contact-form {
+    width: 300px;
+  } */
+
+  #contact .contact-form form {
+    padding: 1rem 1.5rem;
+  }
+
+  #contact .contact-form .form-control {
+    font-size: 12px;
+  }
+  #main-footer .footer-profile ul li {
+    font-size: 9px;
+    display: inline-block;
+  }
+}

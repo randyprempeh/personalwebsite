@@ -1,0 +1,185 @@
+.navbar-wrapper {
+  width: 100%;
+  overflow: hidden;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  & .mysign {
+    display: inline-block;
+    margin: 10px 0 0 70px;
+  }
+  & img {
+    width: 50px;
+    height: 60px;
+  }
+}
+
+/*menu Button */
+.menu-btn {
+  position: absolute;
+  z-index: 20;
+  right: 4.9rem;
+  top: 3.5rem;
+  overflow: hidden;
+  cursor: pointer;
+  @include easeOut;
+
+  .btn-line {
+    width: 1.7rem;
+    height: 0.1rem;
+    margin-bottom: 0.2rem;
+    background: #00b1a7;
+    @include easeOut;
+  }
+  /* menu turns to close icon */
+  &.close {
+    transform: rotate(180deg);
+
+    .btn-line {
+      // animate lines to change into cross...line 1
+      &:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+
+      //Line 2 omit with opacity
+      &:nth-child(2) {
+        opacity: 0;
+      }
+
+      // Line 3 redefine Line 1 to make other cross
+      &:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -4px);
+      }
+    }
+  }
+}
+
+// Menu Overlay
+.menu {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  visibility: hidden;
+
+  &.show {
+    visibility: visible;
+  }
+
+  &-branding,
+  &-nav {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  &-nav {
+    margin: 0;
+    padding: 0;
+    background: midnightblue;
+    list-style: none;
+    transform: translate3d(0, -100%, 0);
+    @include easeOut;
+
+    &.show {
+      // animation slide from top
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  // Portrait
+  &-branding {
+    background: #fff;
+    transform: translate3d(0, 100%, 0);
+    @include easeOut;
+
+    // animation slide from bottom
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+
+    .portrait {
+      width: 30rem;
+      height: 30rem;
+      background: url("../img/head1.png");
+      background-size: cover;
+      border-radius: 50%;
+      bottom: solid 0.3rem $secondary-color;
+
+      &:hover {
+        border-radius: 14px;
+        transition-delay: 1s;
+        transition-timing-function: linear;
+        cursor: pointer;
+        @include easeOut;
+      }
+    }
+  }
+  .menu-nav .nav-item > .nav-link {
+    position: relative;
+    text-decoration: none;
+    color: #fff; // change
+    font-weight: 900;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  .menu-nav .nav-item > .nav-link::before {
+    content: "";
+    position: absolute;
+    width: 25%;
+    height: 5px;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    background-color: #00b1a7;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  .menu-nav .nav-item > .nav-link:hover::before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+
+  .nav-item {
+    transform: translate3d(45rem, 0, 0);
+    @include easeOut;
+
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+
+    &.current > a {
+      color: bisque;
+    }
+  }
+
+  .nav-link {
+    display: inline-block;
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    color: gray;
+    @include easeOut;
+  }
+}
+
+// Delay and loop through nav-item by animation slide
+@for $x from 1 through 4 {
+  .nav-item:nth-child(#{$x}) {
+    transition-delay: $x * 0.1s;
+  }
+}
