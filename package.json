@@ -9,7 +9,7 @@
   },
   "author": "Randy Prempeh",
   "license": "MIT",
-  "homepage": "https://randyprempeh.github.io/mynewportfolio",
+  "homepage": "https://github.com/randyprempeh/personalwebsite",
   "dependencies": {
     "gh-pages": "^3.2.3",
     "node-sass": "^7.0.1"
